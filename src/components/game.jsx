@@ -5,7 +5,7 @@ import Images from './images.jsx';
 
 // Please replace the keys below with your FREE api keys
 
-const CLARIFY_KEY = 'Replace with your api key. You can signup here: https://clarifai.com/developer/account/signup';
+const CLARIFAI_KEY = 'Replace with your api key. You can signup here: https://clarifai.com/developer/account/signup';
 const UNSPLASH_KEY = 'Replace with your api key. You can signup here: https://unsplash.com/developers';
 
 
@@ -50,7 +50,7 @@ class Game extends React.Component {
 			method: 'post',
 			url: 'https://api.clarifai.com/v2/models/aaa03c23b3724a16a56b629203edc62c/versions/aa7f35c01e0642fda5cf400f543e7c40/outputs',
 			headers: {
-				'Authorization': `Key ${ CLARIFY_KEY }`,
+				'Authorization': `Key ${ CLARIFAI_KEY }`,
 				'Content-Type': 'application/json'
 			},
 			data: {
